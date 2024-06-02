@@ -1,0 +1,39 @@
+#Specify the desired exchange here
+exchange = ["binance"]
+
+#list of strings. Ex: ["ADAUSDT","ETHUSDT","BNBUSDT","BTCUSDT"]
+symbols = ["ADAUSDT","ETHUSDT","BNBUSDT","BTCUSDT"]
+
+time_frame = ["1m"]
+
+folder = "data"
+
+#must be in isoformat
+since = "2018-05-28T00:00:00"
+until = "2024-05-28T00:00:00"
+
+# EXCHANGE_LIMIT_RATES
+[bitget]
+limit = 100
+pause_every = 1
+pause = 3
+
+[bitfinex2]
+limit = 10000
+pause_every = 1
+pause = 3
+
+[binance]
+limit = 1000
+pause_every = 1
+pause = 3
+
+[kucoin]
+limit = 1500
+pause_every = 1
+pause = 3
+
+[huobi]
+limit = 1000
+pause_every = 10
+pause = 1
